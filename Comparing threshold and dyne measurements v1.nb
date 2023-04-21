@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2293554,      39014]
+NotebookDataLength[   2293553,      39014]
 NotebookOptionsPosition[   2287946,      38929]
-NotebookOutlinePosition[   2288343,      38945]
-CellTagsIndexPosition[   2288300,      38942]
+NotebookOutlinePosition[   2288342,      38945]
+CellTagsIndexPosition[   2288299,      38942]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -38927,7 +38927,7 @@ However, the situation much more interesting in the Homodyne case.\
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{Full, Full},
+WindowSize->{1440, 776},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (November 18, 2022)",
 StyleDefinitions->"Default.nb",
@@ -38964,7 +38964,7 @@ Cell[79218, 2120, 194, 3, 34, "Output",ExpressionUUID->"b7f493ed-fa88-4079-bf78-
 Cell[79415, 2125, 264, 4, 34, "Output",ExpressionUUID->"bedb9898-7382-44d3-a4d7-6995a1cc47f1"],
 Cell[79682, 2131, 194, 3, 34, "Output",ExpressionUUID->"65aa958b-f923-4d5e-b821-15f8663d117a"],
 Cell[79879, 2136, 856326, 14080, 397, "Output",ExpressionUUID->"3fb1a0f1-0cda-4032-ba52-2499a955aab5"],
-Cell[936208, 16218, 856274, 14080, 420, "Output",ExpressionUUID->"46c3b7d2-0549-424b-83a7-57d5da869f63"]
+Cell[936208, 16218, 856274, 14080, 397, "Output",ExpressionUUID->"46c3b7d2-0549-424b-83a7-57d5da869f63"]
 }, Open  ]],
 Cell[1792497, 30301, 859, 20, 31, "Input",ExpressionUUID->"563a6a33-0510-4116-873a-90ba2adb9c2f"],
 Cell[CellGroupData[{
