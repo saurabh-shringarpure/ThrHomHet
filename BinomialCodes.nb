@@ -1,0 +1,112 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3020,        104]
+NotebookOptionsPosition[      2579,         89]
+NotebookOutlinePosition[      2976,        105]
+CellTagsIndexPosition[      2933,        102]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "Wigner in Fock basis. For ",
+ Cell[BoxData[
+  RowBox[{
+   TemplateBox[{"n"},
+    "Ket"], 
+   TemplateBox[{"m"},
+    "Bra"]}]],ExpressionUUID->"b0395acf-9423-426b-9e06-a792ea51d9bf"],
+ " the Wigner is denoted by W[n,m]"
+}], "Text",
+ CellChangeTimes->{{3.8913949313069572`*^9, 
+  3.8913949883886213`*^9}},ExpressionUUID->"22327be2-27bc-472d-8c25-\
+a1c497ef4564"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[HBar]", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"W", "[", 
+    RowBox[{"n_", ",", "m_"}], "]"}], ":=", " ", 
+   RowBox[{
+    SqrtBox[
+     FractionBox[
+      RowBox[{"m", "!"}], 
+      RowBox[{"n", "!"}]]], 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"\[ImaginaryI]", " ", 
+      RowBox[{"(", 
+       RowBox[{"m", "-", "n"}], ")"}], 
+      RowBox[{"ArcTan", "[", 
+       FractionBox["p", "x"], "]"}]}]], 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"-", "1"}], ")"}], "m"], 
+     RowBox[{"\[Pi]", " ", "\[HBar]"}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["p", "2"]}], 
+       RowBox[{"\[HBar]", "/", "2"}]], ")"}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"n", "-", "m"}], ")"}], "/", "2"}]], 
+    RowBox[{"LaguerreL", "[", 
+     RowBox[{"m", ",", 
+      RowBox[{"(", 
+       RowBox[{"n", "-", "m"}], ")"}], ",", 
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["x", "2"], "+", 
+         SuperscriptBox["p", "2"]}], 
+        RowBox[{"\[HBar]", "/", "2"}]], ")"}]}], "]"}], 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["p", "2"]}], "\[HBar]"]}]]}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.8913949039514627`*^9, 3.891394922866724*^9}, {
+  3.891395027713324*^9, 
+  3.8913952494526043`*^9}},ExpressionUUID->"7b4afbd3-301b-489c-b2a9-\
+5298a648b769"]
+},
+WindowSize->{808, 677},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4a0d6688-cd03-49f5-bbac-0d251ba7d023"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 378, 12, 39, "Text",ExpressionUUID->"22327be2-27bc-472d-8c25-a1c497ef4564"],
+Cell[939, 34, 1636, 53, 139, "Input",ExpressionUUID->"7b4afbd3-301b-489c-b2a9-5298a648b769"]
+}
+]
+*)
+
