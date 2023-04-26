@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3020,        104]
-NotebookOptionsPosition[      2579,         89]
-NotebookOutlinePosition[      2976,        105]
-CellTagsIndexPosition[      2933,        102]
+NotebookDataLength[      6524,        202]
+NotebookOptionsPosition[      6082,        187]
+NotebookOutlinePosition[      6479,        203]
+CellTagsIndexPosition[      6436,        200]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -38,7 +38,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"W", "[", 
-    RowBox[{"n_", ",", "m_"}], "]"}], ":=", " ", 
+    RowBox[{"n_", ",", "m_", ",", "q_", ",", "p_"}], "]"}], ":=", " ", 
    RowBox[{
     SqrtBox[
      FractionBox[
@@ -81,10 +81,108 @@ Cell[BoxData[{
        RowBox[{
         SuperscriptBox["x", "2"], "+", 
         SuperscriptBox["p", "2"]}], "\[HBar]"]}]]}]}], 
-  ";"}], "\[IndentingNewLine]"}], "Input",
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"cols", "=", 
+    RowBox[{"RGBColor", "/@", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<#053061\>\"", ",", "\"\<#2166ac\>\"", ",", "\"\<#4393c3\>\"", ",", 
+       "\"\<#92c5de\>\"", ",", "\"\<#d1e5f0\>\"", ",", "\"\<#f7f7f7\>\"", 
+       ",", "\"\<#fddbc7\>\"", ",", "\"\<#f4a582\>\"", ",", "\"\<#d6604d\>\"",
+        ",", "\"\<#b2182b\>\"", ",", "\"\<#67001f\>\""}], "}"}]}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"limits", "=", "5"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"range", "=", "60"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"mat", "=", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Re", "[", 
+       RowBox[{"Chop", "[", 
+        RowBox[{"W", "[", 
+         RowBox[{"n", ",", "m", ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"q", "-", "1"}], ")"}], 
+            RowBox[{"(", 
+             RowBox[{"limits", "/", "range"}], ")"}]}], "-", "limits"}], ",", 
+          
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"p", "-", "1"}], ")"}], 
+            RowBox[{"(", 
+             RowBox[{"limits", "/", "range"}], ")"}]}], "-", "limits"}], 
+          ","}], "]"}], "]"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"p", ",", "1", ",", 
+        RowBox[{
+         RowBox[{"2", " ", "range"}], " ", "+", "1"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"q", ",", "1", ",", 
+        RowBox[{
+         RowBox[{"2", " ", "range"}], " ", "+", "1"}]}], "}"}]}], "]"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"mat", "=", 
+    FractionBox["mat", 
+     RowBox[{
+      RowBox[{"Abs", "[", " ", 
+       RowBox[{"Total", "[", 
+        RowBox[{"mat", ",", "2"}], "]"}], "]"}], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox["limits", "range"], ")"}], "2"]}]]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"DensityPlot", "[", 
+  RowBox[{
+   RowBox[{"ColorFunction", "->", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Blend", "[", 
+       RowBox[{
+        RowBox[{"Reverse", "[", "cols", "]"}], ",", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox["#", 
+            RowBox[{"Max", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Abs", "[", 
+                RowBox[{"Max", "[", "matWnHOM", "]"}], "]"}], ",", 
+               RowBox[{"Abs", "[", 
+                RowBox[{"Min", "[", "matWnHOM", "]"}], "]"}]}], "}"}], "]"}]],
+            "+", "1"}], ")"}], "/", "2"}]}], "]"}], "&"}], ")"}]}], ",", 
+   RowBox[{"ColorFunctionScaling", "->", "False"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "p"}], "}"}]}], ",", 
+   RowBox[{"LabelStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"FontSize", "\[Rule]", "Medium"}], ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Arial\>\""}], ",", "Black"}], 
+     "}"}]}], ",", 
+   RowBox[{"AxesStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Black"}], "}"}]}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.8913949039514627`*^9, 3.891394922866724*^9}, {
-  3.891395027713324*^9, 
-  3.8913952494526043`*^9}},ExpressionUUID->"7b4afbd3-301b-489c-b2a9-\
+  3.891395027713324*^9, 3.8913952494526043`*^9}, {3.891395354975686*^9, 
+  3.891395379617741*^9}, {3.8913954573762074`*^9, 
+  3.891395575466387*^9}},ExpressionUUID->"7b4afbd3-301b-489c-b2a9-\
 5298a648b769"]
 },
 WindowSize->{808, 677},
@@ -105,7 +203,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 378, 12, 39, "Text",ExpressionUUID->"22327be2-27bc-472d-8c25-a1c497ef4564"],
-Cell[939, 34, 1636, 53, 139, "Input",ExpressionUUID->"7b4afbd3-301b-489c-b2a9-5298a648b769"]
+Cell[939, 34, 5139, 151, 647, "Input",ExpressionUUID->"7b4afbd3-301b-489c-b2a9-5298a648b769"]
 }
 ]
 *)
