@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    166852,       3155]
-NotebookOptionsPosition[    165943,       3132]
-NotebookOutlinePosition[    166343,       3148]
-CellTagsIndexPosition[    166300,       3145]
+NotebookDataLength[    166902,       3155]
+NotebookOptionsPosition[    165993,       3132]
+NotebookOutlinePosition[    166393,       3148]
+CellTagsIndexPosition[    166350,       3145]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3123,11 +3123,11 @@ Cell[TextData[{
    SubscriptBox["\[Rho]", "out"], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
   "c964c5fa-e81d-45a1-93b0-246a20f17539"],
- " after inefficient ZPS for a particular beamsplitter t."
+ " after inefficient ZPS for a particular beam splitter t. "
 }], "Text",
  CellChangeTimes->{{3.891751319653018*^9, 3.8917513219483676`*^9}, {
-  3.8917515755789948`*^9, 
-  3.8917516541644764`*^9}},ExpressionUUID->"f10b4427-6920-4a70-9650-\
+  3.8917515755789948`*^9, 3.8917516541644764`*^9}, {3.891751895153361*^9, 
+  3.8917519019548388`*^9}},ExpressionUUID->"f10b4427-6920-4a70-9650-\
 cbc3d7218b1d"]
 },
 WindowSize->{Full, Full},
@@ -3156,7 +3156,7 @@ Cell[CellGroupData[{
 Cell[36748, 738, 18407, 497, 1068, "Input",ExpressionUUID->"373d46b2-a1c7-4ee4-88ca-32236e75e1e1"],
 Cell[55158, 1237, 110277, 1878, 378, "Output",ExpressionUUID->"5291c515-4d9b-460e-8bae-3504295aff1a"]
 }, Open  ]],
-Cell[165450, 3118, 489, 12, 35, "Text",ExpressionUUID->"f10b4427-6920-4a70-9650-cbc3d7218b1d"]
+Cell[165450, 3118, 539, 12, 35, "Text",ExpressionUUID->"f10b4427-6920-4a70-9650-cbc3d7218b1d"]
 }
 ]
 *)
