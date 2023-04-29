@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    166263,       3140]
-NotebookOptionsPosition[    165451,       3118]
-NotebookOutlinePosition[    165850,       3134]
-CellTagsIndexPosition[    165807,       3131]
+NotebookDataLength[    166852,       3155]
+NotebookOptionsPosition[    165943,       3132]
+NotebookOutlinePosition[    166343,       3148]
+CellTagsIndexPosition[    166300,       3145]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3114,11 +3114,25 @@ MDS71wQ/Ur30tYoBLLh7L5lbkYrIopS0bf82ouzKtcLZyX60vc+ui5J6hFq9
   3.891650781324136*^9, {3.8916508435762653`*^9, 3.891650874472844*^9}},
  CellLabel->
   "Out[1690]=",ExpressionUUID->"5291c515-4d9b-460e-8bae-3504295aff1a"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[TextData[{
+ "Next, we have to check the inner product of the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Rho]", "out"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c964c5fa-e81d-45a1-93b0-246a20f17539"],
+ " after inefficient ZPS for a particular beamsplitter t."
+}], "Text",
+ CellChangeTimes->{{3.891751319653018*^9, 3.8917513219483676`*^9}, {
+  3.8917515755789948`*^9, 
+  3.8917516541644764`*^9}},ExpressionUUID->"f10b4427-6920-4a70-9650-\
+cbc3d7218b1d"]
 },
 WindowSize->{Full, Full},
 WindowMargins->{{12, Automatic}, {Automatic, 24}},
-FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (November 18, 2022)",
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (June 19, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"4a0d6688-cd03-49f5-bbac-0d251ba7d023"
 ]
@@ -3133,15 +3147,16 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 378, 12, 39, "Text",ExpressionUUID->"22327be2-27bc-472d-8c25-a1c497ef4564"],
+Cell[558, 20, 378, 12, 38, "Text",ExpressionUUID->"22327be2-27bc-472d-8c25-a1c497ef4564"],
 Cell[CellGroupData[{
-Cell[961, 36, 7602, 209, 503, "Input",ExpressionUUID->"7b4afbd3-301b-489c-b2a9-5298a648b769"],
-Cell[8566, 247, 28145, 486, 383, "Output",ExpressionUUID->"d9faa1cd-7c4e-4e17-aab7-a6ad58a055a7"]
+Cell[961, 36, 7602, 209, 498, "Input",ExpressionUUID->"7b4afbd3-301b-489c-b2a9-5298a648b769"],
+Cell[8566, 247, 28145, 486, 382, "Output",ExpressionUUID->"d9faa1cd-7c4e-4e17-aab7-a6ad58a055a7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36748, 738, 18407, 497, 1042, "Input",ExpressionUUID->"373d46b2-a1c7-4ee4-88ca-32236e75e1e1"],
-Cell[55158, 1237, 110277, 1878, 415, "Output",ExpressionUUID->"5291c515-4d9b-460e-8bae-3504295aff1a"]
-}, Open  ]]
+Cell[36748, 738, 18407, 497, 1068, "Input",ExpressionUUID->"373d46b2-a1c7-4ee4-88ca-32236e75e1e1"],
+Cell[55158, 1237, 110277, 1878, 378, "Output",ExpressionUUID->"5291c515-4d9b-460e-8bae-3504295aff1a"]
+}, Open  ]],
+Cell[165450, 3118, 489, 12, 35, "Text",ExpressionUUID->"f10b4427-6920-4a70-9650-cbc3d7218b1d"]
 }
 ]
 *)
